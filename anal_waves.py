@@ -47,7 +47,7 @@ for file_info in tqdm(classified_files, desc="Processing files"):
         deltaT = maxPeak - minPeak
         # Append deltaT to the corresponding (driftE, Volt) group
         deltaT_dict[(file_info['driftE'], file_info['Volt'])].append(deltaT)
-        if counter % 100 == 0:
+        if counter % 1 == 0:
             wf.plot_zoomed_waveform_with_filtered()
     else:
         continue

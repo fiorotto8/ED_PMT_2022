@@ -1,3 +1,4 @@
 waves/
 picture/
 __pycache__/
+*.root
